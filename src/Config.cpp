@@ -223,17 +223,17 @@ bool Config::saveFile()
 		fprintf(file, "swap_stereo %d\n",	(int)swap_stereo);
 		fprintf(file, "auto_speed %d\n",	(int)auto_speed);
 		fprintf(file, "show_fps %d\n",		(int)show_fps);
-		fprintf(file, "screenSize %d\n",	screen_size);
-		fprintf(file, "gfxLevel %d\n",		gfx_level);
-		fprintf(file, "gameSkillBase %g\n",	game_skill_base);
-		fprintf(file, "mouseSpeed %g\n",	mouse_speed);
-		fprintf(file, "maxLevel %d\n",		max_level);
-		fprintf(file, "volSound %g\n",		vol_sound);
-		fprintf(file, "volMusic %g\n",		vol_music);
-		fprintf(file, "viewGamma %g\n",		view_gamma);
-		fprintf(file, "audioType %d\n",		(int)audio_type);
-		fprintf(file, "cdromCount %d\n",	cdrom_count);
-		fprintf(file, "cdromDevice %d\n",	cdrom_device);
+		fprintf(file, "screen_size %d\n",	screen_size);
+		fprintf(file, "gfx_level %d\n",		gfx_level);
+		fprintf(file, "game_skill_base %g\n",	game_skill_base);
+		fprintf(file, "mouse_speed %g\n",	mouse_speed);
+		fprintf(file, "max_level %d\n",		max_level);
+		fprintf(file, "vol_sound %g\n",		vol_sound);
+		fprintf(file, "vol_music %g\n",		vol_music);
+		fprintf(file, "view_gamma %g\n",		view_gamma);
+		fprintf(file, "audio_type %d\n",		(int)audio_type);
+		fprintf(file, "cdrom_count %d\n",	cdrom_count);
+		fprintf(file, "cdrom_device %d\n",	cdrom_device);
 
 		fclose(file);
 		fprintf(stderr, "Config file has been written: (%s)\n", configFilename);
@@ -284,4 +284,3 @@ void Config::setScreenSize(int m)
 	}
 	screen_A = (float)screen_width/(float)screen_height;
 }
-
